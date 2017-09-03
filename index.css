@@ -63,7 +63,7 @@ table {
 
 
 html {
-	background-image: url("/Users/heybuddy/desktop/paradegoat.github.io/outrun/outrun.jpg");
+	background-image: url("./outrun/outrun.jpg");
 	background-attachment: fixed;
 	background-size: cover;
   z-index: 1;
@@ -185,7 +185,7 @@ tranform:rotateY(180deg);
 	position: absolute;
 	width: 18vw;
 	height: 28vw;
-	background-image: url("/Users/heybuddy/desktop/paradegoat.github.io/outrun/outrun-motion-fixed.gif");
+	background-image: url("./outrun/outrun-motion-fixed.gif");
 	background-position: bottom;
 	border-radius: 10%;
 	border: .01vw solid silver;
@@ -203,7 +203,7 @@ tranform:rotateY(180deg);
 	z-index: 3;
 	width: 18vw;
 	height: 28vw;
-	background-image: url("/Users/heybuddy/desktop/paradegoat.github.io/outrun/stars.jpg");
+	background-image: url("./outrun/stars.jpg");
 	background-position: bottom;
 	border-radius: 10%;
 	border: .01vw solid silver;
@@ -325,7 +325,7 @@ tranform:rotateY(180deg);
 	/*border: 3px solid green;*/
 	width: 30%;
 	padding: 3vw;
-	background-image: url('/Users/heybuddy/desktop/paradegoat.github.io/outrun/stars.jpg');
+	background-image: url('./outrun/stars.jpg');
 	opacity: .9;
 }
 

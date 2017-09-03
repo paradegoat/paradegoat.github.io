@@ -1,0 +1,383 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------  ----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff2') format('woff2'),
+       url('myfont.woff') format('woff'),
+       url('myfont.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+nav, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html {
+	background-image: url("/Users/heybuddy/desktop/paradegoat.github.io/outrun/outrun.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+  z-index: 1;
+}
+
+
+
+.name{
+	text-align: center;
+	position: absolute;
+	z-index: 3;
+	top: 10vw;
+	right: 27vw;
+	/*border: 1px solid yellow;*/
+	color: white;
+	font-size: 4vw;
+	opacity: .5;
+	transform: rotate(350deg);
+ transition: transform 15s;
+}
+
+.name:hover {
+    transform:  rotateY(0deg) rotate(0deg);
+}
+.name h2{
+	/*background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;*/
+
+	background-image: linear-gradient(to right, white, gold);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+  font-family: 'Madonna', Fallback, sans-serif;
+	letter-spacing: .5vw;
+
+	/*background: -webkit-linear-gradient(#fff, #222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+
+}
+.name h3{
+	font-size: 4vw;
+	line-height: 6vw;
+	font-size: 3vw;
+	font-family: 'Madonna', Fallback, sans-serif;
+	letter-spacing: .5vw;
+
+
+ background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	 background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	 color:transparent;
+	 -webkit-background-clip: text;
+	 background-clip: text;
+}
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------  V SKILLS AND ABOUT FLIP CARDS V----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+
+.skills-card-container{
+	width: 18vw;
+	height: 40vw;
+	top: 6vw;
+	left: 8vw;
+  position: relative;
+  perspective: 800px;
+	/*border: 2px solid yellow;*/
+
+}
+
+.about-card-container{
+	width: 18vw;
+	height: 40vw;
+	top: -34vw;
+	left: 76vw;
+  position: relative;
+  perspective: 800px;
+	/*border: 2px solid yellow;*/
+}
+
+.card{
+  position: absolute;
+	z-index: 4;
+	width: 18vw;
+	height: 18vw;
+	font-size: 4vw;
+	text-align: center;
+	font-family: 'Madonna', Fallback, sans-serif;
+	background-image: linear-gradient(to right, white, gold);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	opacity: 2;
+  transform-style: preserve-3d;
+  transition: transform 4s;
+}
+
+.front, .back{
+	margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back{
+tranform:rotateY(180deg);
+}
+
+.card .front {
+	position: absolute;
+	width: 18vw;
+	height: 28vw;
+	background-image: url("/Users/heybuddy/desktop/paradegoat.github.io/outrun/outrun-motion-fixed.gif");
+	background-position: bottom;
+	border-radius: 10%;
+	border: .01vw solid silver;
+}
+
+.front h1{
+	margin-top: 24vw;
+	font-size: 4vw;
+	text-align: center;
+	font-family: 'Madonna', Fallback, sans-serif;
+	color: white;
+}
+.card .back {
+	position: absolute;
+	z-index: 3;
+	width: 18vw;
+	height: 28vw;
+	background-image: url("/Users/heybuddy/desktop/paradegoat.github.io/outrun/stars.jpg");
+	background-position: bottom;
+	border-radius: 10%;
+	border: .01vw solid silver;
+  transform: rotateY( 180deg );
+}
+
+.card:hover {
+  transform: rotateY( 180deg );
+}
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------ ^ SKILLS AND ABOUT FLIP CARDS ^ ----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------ V MENU BAR V ----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+.menu-bar {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	/*border: 2px dashed green;*/
+	height: 8vw;
+	/*background-image: linear-gradient(to bottom, pink, gold);*/
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	z-index: 2;
+	font-size: 3vw;
+	top: 40vw;
+	justify-content: space-between;
+	position: absolute;
+	/*border: 2px solid green;*/
+
+}
+
+.menu-box{
+	/*border: 2px solid white;*/
+	text-align: center;
+	font-size: 3.5vw;
+	font-family: 'Madonna', Fallback, sans-serif;
+	letter-spacing: .5vw;
+	width: 3vw;
+	padding-top: 38vw;
+	top: 60vw;
+	z-index: 4;
+  text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 15px rgba(0,0,0,0.9),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.9);
+}
+
+
+ .links{
+	 flex: 1  auto;
+ 	text-align: center;
+ 	font-family: 'Madonna', Fallback, sans-serif;
+ 	letter-spacing: .5vw;
+	font-size: 2vw;
+	padding:0vw;
+ }
+
+ hr {
+	 height: .1vw;
+	 width: 14%;
+	 background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+ }
+
+.resume{
+	/*padding-left: 4vw;*/
+}
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------ ^ MENU BAR ^ ----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------ V PROJECTS V ----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+ .project-container{
+	display: flex;
+	flex-flow: column;
+	/*background-image: url('/Users/heybuddy/desktop/paradegoat.github.io/outrun/stars.jpg');*/
+
+	height: 100vw;
+	width: 100%;
+	z-index: 4;
+	/*padding-top: 40vw;*/
+	/*opacity: .3;*/
+}
+
+.projects{
+	flex: 1  auto;
+	display: flex;
+	flex-flow: row nowrap;
+	/*border: 3px solid yellow;*/
+	height: 3vw;
+	width: 95%;
+	margin: 2vw;
+	box-shadow: 1vw 2vw 2p20x 1px rgba(0, 0, 0, .5);
+	/*background-image: url('/Users/heybuddy/desktop/paradegoat.github.io/outrun/stars.jpg');*/
+}
+
+.project-description{
+	flex: 1  auto;
+	/*border: 3px solid green;*/
+	width: 30%;
+	padding: 3vw;
+	background-image: url('/Users/heybuddy/desktop/paradegoat.github.io/outrun/stars.jpg');
+	opacity: .9;
+}
+
+.project-screen-shot{
+	flex:  auto;
+	width: 30%;
+	padding: 2vw;
+	background-color: pink;
+	/*border: 3px solid blue;*/
+}
+
+.quiz-show-title{
+	font-size: 2vw;
+	color: white;
+}
+
+.quiz-show-description{
+	color: white;
+	font-size: 1vw;
+}
+
+.button-div{
+	margin-left: 10vw;
+}
+
+.code{
+	padding: 1.5vw;
+	border-radius: 1vw;
+	background: transparent;
+	color: white;
+	font-size: 2vw;
+	margin-top: 5vw;
+	margin-right: 2vw;
+}
+
+.live-site{
+	padding: 1.5vw;
+	border-radius: 1vw;
+	background: transparent;
+	color: white;
+	font-size: 2vw;
+	margin-top: 5vw;
+	margin-left: 2vw;
+}
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------ ^ PROJECTS ^ ----------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+h4 a {
+	text-decoration: none;
+	color: white;
+}

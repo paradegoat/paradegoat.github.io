@@ -7,6 +7,8 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,7 +26,15 @@
   </div>
   <div class="back">
     <p>
-      stuff goes here!
+      Ruby on Rails<br />
+      JavaScript<br />
+      Node.js<br />
+      HTML<br />
+      CSS<br />
+      MySql<br />
+      PostgreSQL<br />
+      MongoDb<br />
+      Git<br />mLab
     </p>
   </div>
 </div>
@@ -40,12 +50,14 @@
   </div>
   <div class="back">
     <p>
-      stuff goes here!
+
     </p>
   </div>
 </div>
 <div class="menu-box resume">
-    <h4><a href="">RESUME</a></h4>
+    <h4><a href="./public/img/humphreys.geoff resume 1.2.pdf">RESUME<br/>
+      (update before push)
+    </a></h4>
 </div>
 </div>
 
@@ -66,7 +78,7 @@
   <div class="menu-box links">
     <h4><a href="https://www.linkedin.com/in/geoff-humphreys-6773a5142/">LINKEDIN</a></h4>
     <hr />
-    <h4><a href="">GITHUB</a></h4>
+    <h4><a href="https://github.com/paradegoat">GITHUB</a></h4>
   </div>
 
   <!-- <div class="menu-box resume">
@@ -78,68 +90,79 @@
 </div>
 <div class="project-container">
 
+  <a name= "jumpProjects">
   <div class="projects" id="projects">
-    <a name= "jumpProjects">
-    <div class="project-description">
-      <h2 class= "quiz-show-title">Quiz Show</h2>
-        <p class= "quiz-show-description">
-        Blog vegan af franzen you probably haven't heard of them flexitarian bushwick cardigan typewriter neutra microdosing snackwave hexagon. Poke enamel pin roof party shaman, single-origin coffee cold-pressed prism literally biodiesel gluten-free activated charcoal ethical whatever. Chicharrones green juice narwhal bushwick offal. Kogi affogato thundercats shoreditch blue bottle vice craft beer street art shabby chic 90's chicharrones trust fund hammock. Lo-fi put a bird on it ethical messenger bag, synth pork belly iceland succulents. Tote bag wolf seitan truffaut hammock etsy pour-over single-origin coffee live-edge. Flexitarian try-hard pug franzen fanny pack gochujang. Umami direct trade listicle twee XOXO. Tote bag fixie single-origin coffee vinyl normcore polaroid.
+    <div class="project-box">
+      <h2 class= "project-title">SafeSpace</h2>
+        <p class= "project-description">
+          Working with a team for our final project at The Iron Yard, SafeSpace is a project for emptath360 and Luv is a Gift.  It allows users access quick help if in an abusive situation and gives them the ability to log their experiences in a diary for possible police intervention or legal battles.  The user is able to enter information about their environment and description and picture of perpetrator.  The user also has the option of a one touch call to 911 or to a safety contact if immediate police help is not needed.  I was tasked with building the database with MongoDB  and mLab.  The project was built using Node.js.  We worked on Github using personal development branches pushed to shared development branch and finally deployed the master on Heroku.
+
+          check it out below: username:guest password: Password1
         </p>
         <div class="button-div">
-
-          <a href"" target="_blank">
+          <a href="https://github.com/Luv-Is-A-Gift/dom-vio-app" target="_blank">
             <button class="code">Code</button>
           </a>
 
-          <a href"" target="_blank">
+          <a href="http://gamesafe.herokuapp.com/" target="_blank">
             <button class="live-site">Live Site</button>
           </a>
         </div>
     </div>
-    <div class= "project-screen-shot">
+    <div class= "project-screen-shot flip-book" id="safespace">
+      <div class="photobanner">
+        <img class="first" src="./public/img/safe-space-1.png" alt="" />
+        <!-- <img class="first" src="safe-space-signup.png" alt="" />
+        <img class="first"src="safe-space-login.png" alt="" />
+        <img class="first" src="safe-space-home.png" alt="" />
+        <img class="first" src="safe-space-user-info.png" alt="" />
+        <img class="first" src="safe-space-log.png" alt="" />
+        <img class="first" src="safe-space-log2.png" alt="" /> -->
+      </div>
     </div>
   </div>
 
+
   <div class="projects" id="project-two">
-    <div class="project-description">
-      <h2 class= "quiz-show-title">Pando-ra</h2>
-        <p class= "quiz-show-description">
-        Blog vegan af franzen you probably haven't heard of them flexitarian bushwick cardigan typewriter neutra microdosing snackwave hexagon. Poke enamel pin roof party shaman, single-origin coffee cold-pressed prism literally biodiesel gluten-free activated charcoal ethical whatever. Chicharrones green juice narwhal bushwick offal. Kogi affogato thundercats shoreditch blue bottle vice craft beer street art shabby chic 90's chicharrones trust fund hammock. Lo-fi put a bird on it ethical messenger bag, synth pork belly iceland succulents. Tote bag wolf seitan truffaut hammock etsy pour-over single-origin coffee live-edge. Flexitarian try-hard pug franzen fanny pack gochujang. Umami direct trade listicle twee XOXO. Tote bag fixie single-origin coffee vinyl normcore polaroid.
+    <div class="project-box">
+      <h2 class= "project-title">Quiz Time</h2>
+        <p class= "project-description">
+        Blog vegan af franzen you probably haven't heard of them flexitarian bushwick cardigan typewriter neutra microdosing snackwave hexagon. Poke enamel pin roof party shaman, single-origin coffee cold-pressed prism literally biodiesel gluten-free activated charcoal ethical whatever. Chicharrones green juice narwhal bushwick offal. Kogi affogato thundercats shoreditch blue bottle vice craft beer
         </p>
         <div class="button-div">
-
           <a href"" target="_blank">
             <button class="code">Code</button>
           </a>
-
           <a href"" target="_blank">
             <button class="live-site">Live Site</button>
           </a>
         </div>
-
-    </div>
-    <div class= "project-screen-shot">
+      </div>
+    <div class= "project-screen-shot scrolling" >
+      <img class="quiz-time-screenshot" src="./public/img/quiz-time_screenshot.png" alt="Quiz Time Homepage" />
     </div>
   </div>
 
   <div class="projects" id="project-three">
-    <div class="project-description">
-      <h2 class= "quiz-show-title">Not sure</h2>
-        <p class= "quiz-show-description">
+    <div class="project-box">
+      <h2 class= "project-title">Pando-Ra</h2>
+        <p class= "project-description">
         Blog vegan af franzen you probably haven't heard of them flexitarian bushwick cardigan typewriter neutra microdosing snackwave hexagon. Poke enamel pin roof party shaman, single-origin coffee cold-pressed prism literally biodiesel gluten-free activated charcoal ethical whatever. Chicharrones green juice narwhal bushwick offal. Kogi affogato thundercats shoreditch blue bottle vice craft beer street art shabby chic 90's chicharrones trust fund hammock. Lo-fi put a bird on it ethical messenger bag, synth pork belly iceland succulents. Tote bag wolf seitan truffaut hammock etsy pour-over single-origin coffee live-edge. Flexitarian try-hard pug franzen fanny pack gochujang. Umami direct trade listicle twee XOXO. Tote bag fixie single-origin coffee vinyl normcore polaroid.
-        </p>
+
         <div class="button-div">
 
-          <a href"" target="_blank">
+          <a href"https://github.com/paradegoat/Week_4_Project" target="_blank">
             <button class="code">Code</button>
           </a>
 
-          <a href"" target="_blank">
+          <a href"https://paradegoat.github.io/Week_4_Project/" target="_blank">
             <button class="live-site">Live Site</button>
           </a>
         </div>
+        </p>
     </div>
-    <div class= "project-screen-shot">
+    <div class= "project-screen-shot scrolling" >
+      <img class="pando-screenshot" src="./public/img/pando-ra_screenshot.png" alt="Quiz Time Homepage" />
     </div>
   </div>
 
